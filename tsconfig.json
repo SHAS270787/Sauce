@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    "target": "ES2019",
+    "module": "commonjs",
+    "strict": true,
+    "esModuleInterop": true,
+    "moduleResolution": "node",
+    "sourceMap": true,
+    "outDir": "./dist",
+    "rootDir": "./",
+    "types": ["node"]
+  },
+  "include": [
+    "Src/Features/**/*.ts",
+    "Src/pages/**/*.ts",
+    "Src/step/**/*.ts",
+    "Src/support/**/*.ts"
+  ],
+  "exclude": [
+    "dist"
+  ]
+}

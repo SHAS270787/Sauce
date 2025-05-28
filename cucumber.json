@@ -1,0 +1,10 @@
+{
+  "default": {
+    "paths": ["Src/Features/*.feature"],
+    "require": ["Src/step/*.ts", "Src/support/*.ts"],
+    "requireModule": ["ts-node/register"],
+    "format": ["progress", "json:reports/cucumber-report.json"],
+    "defaultTimeout": 30000
+
+  }
+}

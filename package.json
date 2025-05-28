@@ -1,0 +1,17 @@
+{
+  "name": "playwright-direct-ferries",
+  "version": "1.0.0",
+"scripts": {
+  "test": "cucumber-js --require-module ts-node/register"
+}
+,
+  "dependencies": {
+    "@cucumber/cucumber": "^10.0.0",
+    "@playwright/test": "^1.40.0",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.17.50"
+  }
+}
