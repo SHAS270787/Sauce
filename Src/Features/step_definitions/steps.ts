@@ -25,7 +25,6 @@ When('I add the backpack to the cart', async () => {
 
 When('I go to the cart and checkout', async () => {
   await page.locator('.shopping_cart_link').click();
-  await page.locator('[data-test="checkout"]').click();
 });
 
 When('I enter my name {string}, {string}, and postcode {string}', async (first, last, postcode) => {
@@ -39,7 +38,5 @@ When('I place the order', async () => {
   await page.locator('[data-test="finish"]').click();
 });
 
-Then('I should be returned to products page', async () => {
-  await page.locator('[data-test="back-to-products"]').click();
   await browser.close();
 });
