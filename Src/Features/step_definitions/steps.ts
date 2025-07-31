@@ -1,7 +1,6 @@
 import { Given, When, Then, setDefaultTimeout } from '@cucumber/cucumber';
 import { chromium, Browser, Page } from 'playwright';
 
-let browser: Browser;
 let page: Page;
 
 setDefaultTimeout(30 * 1000);
@@ -34,9 +33,3 @@ When('I enter my name {string}, {string}, and postcode {string}', async (first, 
   await page.locator('[data-test="continue"]').click();
 });
 
-When('I place the order', async () => {
-  await page.locator('[data-test="finish"]').click();
-});
-
-  await browser.close();
-});
