@@ -1,22 +1,16 @@
 {
   "compilerOptions": {
     "target": "ES2019",
-    "module": "commonjs",
-    "strict": true,
-    "esModuleInterop": true,
+    "module": "CommonJS",
     "moduleResolution": "node",
+    "esModuleInterop": true,
+    "strict": true,
+    "strictNullChecks": true,
+    "noImplicitAny": true,
     "sourceMap": true,
     "outDir": "./dist",
-    "rootDir": "./",
-    "types": ["node"]
+    "types": ["node", "cucumber"]
   },
-  "include": [
-    "Src/Features/**/*.ts",
-    "Src/pages/**/*.ts",
-    "Src/step/**/*.ts",
-    "Src/support/**/*.ts"
-  ],
-  "exclude": [
-    "dist"
-  ]
+  "include": ["Src/**/*.ts"],
+  "exclude": ["node_modules", "dist"]
 }
